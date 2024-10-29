@@ -14,7 +14,7 @@ dotenv.config();
 
 const app = express();
 const port = 8747;
-const databaseURL = process.env.DATABASE_URL;
+const databaseURL = "mongodb://localhost:27017/chat-app";
 
 app.use(
     cors({
