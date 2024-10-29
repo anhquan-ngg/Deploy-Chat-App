@@ -13,12 +13,12 @@ import channelRoutes from "./routes/ChannelRoutes.js";
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 3001;
+const port = 8747;
 const databaseURL = process.env.DATABASE_URL;
 
 app.use(
     cors({
-        origin: "https://deploy-react-chat-app.vercel.app",
+        origin: "deploy-chat-app-front-end-psi.vercel.app",
         methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
         credentials: true,
     })
