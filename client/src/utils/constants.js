@@ -1,4 +1,4 @@
-export const HOST = "deploy-chat-app-front-end-psi.vercel.app/deploy-chat-app-beta.vercel.app"
+export const HOST = "deploy-chat-app-front-end-psi.vercel.app/deploy-chat-app-beta.vercel.app/"
 ;
 
 export const AUTH_ROUTES = "api/auth";
