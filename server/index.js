@@ -14,7 +14,7 @@ dotenv.config();
 
 const app = express();
 const port = 8747;
-const databaseURL = "mongodb://localhost:27017/chat-app";
+const databaseURL = "mongodb+srv://nanhquan143:nvnqTSsIrZZ5nsjy@mern-chat-app.c6x8y.mongodb.net/?retryWrites=true&w=majority&appName=mern-chat-app";
 
 app.use(
     cors({
