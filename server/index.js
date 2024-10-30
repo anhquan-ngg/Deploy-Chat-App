@@ -18,7 +18,7 @@ const databaseURL = "mongodb://localhost:27017/chat-app";
 
 app.use(
     cors({
-        origin: "https://deploy-chat-app-front-end-psi.vercel.app/",
+        origin: "https://deploy-chat-app-front-end-psi.vercel.app",
         methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
         credentials: true,
     })
