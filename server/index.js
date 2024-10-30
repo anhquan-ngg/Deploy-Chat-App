@@ -1,4 +1,3 @@
-//express dotenv cors cookie-parser mongoose bcrypt jsonwebtoken nodemon
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
@@ -14,11 +13,11 @@ dotenv.config();
 
 const app = express();
 const port = 8747;
-const databaseURL = "mongodb+srv://nanhquan143:nvnqTSsIrZZ5nsjy@mern-chat-app.c6x8y.mongodb.net/?retryWrites=true&w=majority&appName=mern-chat-app";
+const databaseURL = process.env.DATABASE_URL;
 
 app.use(
     cors({
-        origin: "https://deploy-chat-app-front-end-psi.vercel.app",
+        origin: process.env.ORIGIN,
         methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
         credentials: true,
     })
